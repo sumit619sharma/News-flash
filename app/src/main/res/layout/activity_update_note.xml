@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateNote"
+    android:background="@color/greyl">
+
+
+
+    <EditText
+        android:id="@+id/uptitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="10dp"
+        android:hint="title"
+        android:inputType="text"
+        android:background="@drawable/edit_text_back"
+        android:padding="15dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/upsub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="10dp"
+        android:hint="sub title"
+        android:inputType="text"
+        android:background="@drawable/edit_text_back"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@id/uptitle"/>
+
+    <TextView
+        android:id="@+id/uppriority"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:text="Priority"
+        android:gravity="start"
+        android:background="@drawable/edit_text_back"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@id/upsub" />
+
+    <ImageView
+        android:id="@+id/upred"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/red_shape"
+        app:layout_constraintLeft_toRightOf="@id/uppriority"
+        app:layout_constraintTop_toTopOf="@id/uppriority"
+        android:foregroundGravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@id/uppriority"
+        android:padding="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/upyelow"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/yellow_shape"
+        app:layout_constraintLeft_toRightOf="@id/upred"
+        app:layout_constraintTop_toTopOf="@id/uppriority"
+        android:foregroundGravity="center_vertical"
+        android:contentDescription="@string/redshape"
+        app:layout_constraintBottom_toBottomOf="@id/uppriority"
+        android:padding="5dp"/>
+
+    <ImageView
+        android:id="@+id/upgreen"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/green_shape"
+        app:layout_constraintLeft_toRightOf="@id/upyelow"
+        app:layout_constraintTop_toTopOf="@id/uppriority"
+        android:foregroundGravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@id/uppriority"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/upnotes"
+
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:maxWidth="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="10dp"
+        android:hint="Enter notes here"
+        android:inputType="text"
+        android:gravity="start"
+        android:background="@drawable/edit_text_back"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@id/uppriority" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/updatebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/todo"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/red"
+        android:onClick="updateNote"
+        android:src="@drawable/ic_baseline_done_24"
+        tools:ignore="OnClick" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

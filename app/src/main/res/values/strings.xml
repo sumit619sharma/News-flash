@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="if_you_write_your_dreams_the_probability_of_achieving_n_is_increas_by_10_times">If you write your Dreams the probability of achieving \n is increas by 10 Times</string>
+
+    <string name="search_note_here">Enter note here</string>
+    <string name="submit">SUBMIT</string>
+    <string name="todo">TODO</string>
+    <string name="redshape">redshape</string>
+    <string name="no_filter">no filter</string>
+    <string name="low_to_high">Low to high</string>
+    <string name="high_to_low">high to Low</string>
+    <string name="enter_note_here">Enter note here</string>
+    <string name="notes">Notes</string>
+</resources>
